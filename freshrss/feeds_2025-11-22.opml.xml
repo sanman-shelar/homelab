@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml xmlns:frss="https://freshrss.org/opml" version="2.0">
+  <head>
+    <title>FreshRSS</title>
+    <dateCreated>Sat, 22 Nov 2025 18:46:02 +0530</dateCreated>
+  </head>
+  <body>
+    <outline text="Games">
+      <outline text="Kotaku" type="rss" xmlUrl="https://kotaku.com/feed" htmlUrl="https://kotaku.com/" description="Gaming Reviews, News, Tips and More."/>
+    </outline>
+    <outline text="Hacking Writeups">
+      <outline text="Haircutfish" type="rss" xmlUrl="https://haircutfish.com/feed.xml" htmlUrl="https://haircutfish.github.io/" description="TryHackMe Write-Up | PowerShell | CyberSecurity"/>
+    </outline>
+    <outline text="Hardware">
+      <outline text="Liliputing" type="rss" xmlUrl="https://liliputing.com/feed/" htmlUrl="https://liliputing.com/"/>
+    </outline>
+    <outline text="News Sites">
+      <outline text="0day Fans" type="rss" xmlUrl="https://0dayfans.com/feed.rss" htmlUrl="https://0dayfans.com/feed.rss" description="A curated feed of the latest security research and advisories."/>
+      <outline text="Better Offline Podcast" type="rss" xmlUrl="https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/cf0c25ad-cf01-4da5-ae1c-b0fc015f790e/53ed270b-7147-4f70-81c2-b0fc015fe4ed/podcast.rss" htmlUrl="https://www.iheart.com/podcast/150284547" description="&lt;p&gt;Better Offline is a weekly show exploring the tech industry’s influence and manipulation of society - and interrogating the growth-at-all-costs future that tech’s elite wants to build. &lt;/p&gt;&#13;&#10;&lt;p&gt;Combining narrative-form storytelling, one-on-one interviews and panel-based discussions, Better Offline cuts through the buzzwords and obfuscation of the tech industry, investigating and evaluating the schemes and scams of everyone from cryptocurrency scumbags to the greediest of the venture capital elite. Tech industry veteran Ed Zitron and a dynamic coterie of guests will help listeners understand the who, how and why of how tech’s most powerful players are changing the world - for better or for worse.&lt;/p&gt;"/>
+      <outline text="Biz &amp; IT – Ars Technica" type="rss" xmlUrl="https://feeds.arstechnica.com/arstechnica/technology-lab" htmlUrl="https://arstechnica.com/" description="Serving the Technologist since 1998. News, reviews, and analysis."/>
+      <outline text="BleepingComputer" type="rss" xmlUrl="https://www.bleepingcomputer.com/feed/" htmlUrl="https://www.bleepingcomputer.com/" description="BleepingComputer - All Stories"/>
+      <outline text="Blog – Hackaday" type="rss" xmlUrl="https://hackaday.com/blog/feed/" htmlUrl="https://hackaday.com/" description="Fresh hacks every day"/>
+      <outline text="Cisco Talos Blog" type="rss" xmlUrl="https://blog.talosintelligence.com/rss/" htmlUrl="https://blog.talosintelligence.com/" description="Talos intelligence and world-class threat research team better protects you and your organization against known and emerging cybersecurity threats."/>
+      <outline text="Citation Needed" type="rss" xmlUrl="https://www.citationneeded.news/rss/" htmlUrl="https://www.citationneeded.news/" description="A critical look at the cryptocurrency industry and the broader technology world."/>
+      <outline text="DataBreaches.net" type="rss" xmlUrl="https://databreaches.net/feed/" htmlUrl="https://www.databreaches.net/" description="The Office of Inadequate Security"/>
+      <outline text="Google Online Security Blog" type="rss" xmlUrl="http://feeds.feedburner.com/GoogleOnlineSecurityBlog" htmlUrl="http://security.googleblog.com/" description="The latest news and insights from Google on security and safety on the Internet."/>
+      <outline text="Hacker News" type="rss" xmlUrl="https://news.ycombinator.com/rss" htmlUrl="https://news.ycombinator.com/" description="Links for the intellectually curious, ranked by readers."/>
+      <outline text="Huntress Blog" type="rss" xmlUrl="https://www.huntress.com/blog/rss.xml" htmlUrl="https://www.huntress.com/blog"/>
+      <outline text="It's FOSS" type="rss" xmlUrl="https://itsfoss.com/rss/" htmlUrl="https://itsfoss.com/" description="Making You a Better Linux User"/>
+      <outline text="Krebs on Security" type="rss" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/" description="In-depth security news and investigation"/>
+      <outline text="Pluralistic: Daily links from Cory Doctorow" type="rss" xmlUrl="https://pluralistic.net/feed/" htmlUrl="https://pluralistic.net/" description="No trackers, no ads. Black type, white background. Privacy policy: we don't collect or retain any data at all ever period."/>
+      <outline text="Risky Bulletin" type="rss" xmlUrl="https://risky.biz/feeds/risky-business-news/" htmlUrl="https://risky.biz/" description="Regular cybersecurity news updates from the Risky Business team..."/>
+      <outline text="The DFIR Report" type="rss" xmlUrl="https://thedfirreport.com/feed/" htmlUrl="https://thedfirreport.com/" description="Real Intrusions by Real Attackers, The Truth Behind the Intrusion"/>
+      <outline text="The Record from Recorded Future News" type="rss" xmlUrl="https://therecord.media/feed" htmlUrl="https://therecord.media/feed" description="The Record by Recorded Future News gives exclusive, behind-the-scenes access to leaders, policymakers, researchers, and the shadows of the cyber underground."/>
+      <outline text="The Register" type="rss" xmlUrl="https://www.theregister.com/headlines.atom" htmlUrl="https://www.theregister.com/" description="Biting the hand that feeds IT — Enterprise Technology News and Analysis"/>
+    </outline>
+    <outline text="Reddit">
+      <outline text="top scoring links : ExperiencedDevs" type="rss" xmlUrl="https://www.reddit.com/r/ExperiencedDevs/top/.rss?t=month" htmlUrl="https://www.reddit.com/r/ExperiencedDevs/top/?t=month" description="For experienced developers. This community should be specialized subreddit facilitating discussion amongst individuals who have gained some ground in the software engineering world. Any posts or comments that are made by inexperienced individuals (outside of the weekly Ask thread) should be reported. Anything not specifically related to development or career advice that is _specific_ to Experienced Developers belongs elsewhere. Try /r/work, /r/AskHR, /r/careerguidance, or /r/OfficePolitics."/>
+    </outline>
+    <outline text="YouTube">
+      <outline text="Computerphile" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA" htmlUrl="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA"/>
+      <outline text="Crosstalk Solutions" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCVS6ejD9NLZvjsvhcbiDzjw" htmlUrl="https://www.youtube.com/channel/UCVS6ejD9NLZvjsvhcbiDzjw"/>
+      <outline text="Learn Linux TV" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCxQKHvKbmSzGMvUrVtJYnUA" htmlUrl="https://www.youtube.com/channel/UCxQKHvKbmSzGMvUrVtJYnUA"/>
+      <outline text="Level1Linux" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCOWcZ6Wicl-1N34H0zZe38w" htmlUrl="https://www.youtube.com/channel/UCOWcZ6Wicl-1N34H0zZe38w"/>
+      <outline text="Level1Techs" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4w1YQAJMWOz4qtxinq55LQ" htmlUrl="https://www.youtube.com/channel/UC4w1YQAJMWOz4qtxinq55LQ"/>
+      <outline text="Seytonic" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCW6xlqxSY3gGur4PkGPEUeA" htmlUrl="https://www.youtube.com/channel/UCW6xlqxSY3gGur4PkGPEUeA"/>
+      <outline text="Technology Connections" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCy0tKL1T7wFoYcxCe0xjN6Q" htmlUrl="https://www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q"/>
+      <outline text="Technology Connextras" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UClRwC5Vc8HrB6vGx6Ti-lhA" htmlUrl="https://www.youtube.com/channel/UClRwC5Vc8HrB6vGx6Ti-lhA"/>
+    </outline>
+  </body>
+</opml>

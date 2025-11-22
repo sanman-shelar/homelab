@@ -1,0 +1,134 @@
+services:
+  npm:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy-manager
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - "80:80" # Public HTTP Port
+      - "443:443" # Public HTTPS Port
+      - "81:81" # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+
+    environment:
+      # Uncomment this if you want to change the location of
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: "/data/database.sqlite"
+
+      # Uncomment this if IPv6 is not enabled on your host
+      DISABLE_IPV6: 'true'
+      INITIAL_ADMIN_EMAIL: admin@example.com
+      INITIAL_ADMIN_PASSWORD: pass
+
+    volumes:
+      - ./npm/data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+  it-tools:
+    image: corentinth/it-tools:latest
+    container_name: it-tools
+    restart: unless-stopped
+    ports:
+      - "8060:80"
+
+  dozzle:
+    image: amir20/dozzle:latest
+    container_name: dozzle
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8061:8080"
+
+#  cyber-chef:
+#    image: mpepping/cyberchef:latest
+#    container_name: cyber-chef
+#    restart: unless-stopped
+#    ports:
+#      - "8062:8000"
+#
+#  stirling-pdf:
+#    image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest
+#    container_name: stirling-pdf
+#    restart: unless-stopped
+#    ports:
+#      - "8063:8080"
+#    volumes:
+#      - ./stirlingpdf/trainingData:/usr/share/tessdata # Required for extra OCR languages
+#      - ./stirlingpdf/extraConfigs:/configs
+#      - ./stirlingpdf/customFiles:/customFiles/
+#      - ./stirlingpdf/logs:/logs/
+#      - ./stirlingpdf/pipeline:/pipeline/
+#    environment:
+#      - DISABLE_ADDITIONAL_FEATURES=false
+#      - LANGS=en_GB
+
+  fresh-rss:
+    image: freshrss/freshrss:latest
+    container_name: freshrss-app
+    restart: unless-stopped
+    ports:
+      - "8064:80" # Map host port 80 to container port 80
+    environment:
+      TZ: Asia/Kolkata # Adjust to your timezone
+      CRON_MIN: 10 # Frequency of feed updates (in minutes)
+      FRESHRSS_ENV: production
+    volumes:
+      - ./rss/data:/var/www/FreshRSS/data
+      - ./rss/extensions:/var/www/FreshRSS/extensions
+
+#  loki:
+#    image: grafana/loki:3.4.1
+#    restart: unless-stopped
+#    ports:
+#      - "3100:3100"
+#    command: -config.file=/etc/loki/local-config.yaml
+#    volumes:
+#      - ./loki-data:/loki # Loki persistent data folder
+#      - ./config-loki:/etc/loki # Loki config folder
+#
+##  promtail:
+##    image: grafana/promtail:3.4.1
+##    restart: unless-stopped
+##    volumes:
+##      - ./npm/data/logs/:/var/log # path to your NPM logs
+##      - ./config-promtail/config.yaml:/etc/promtail/config.yaml # Promtail config folder
+#
+#  alloy:
+#    image: grafana/alloy:v1.10.1
+#    ports:
+#      - "12345:12345" # Alloy UI
+#    volumes:
+#      - ./config-alloy/alloy-config.alloy:/etc/alloy/config.alloy
+#      - ./npm/data/logs/:/var/log # path to your NPM logs
+#
+#  grafana:
+#    environment:
+#      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+#      - GF_AUTH_ANONYMOUS_ENABLED=false # disable anonymous login on Grafana
+#    entrypoint:
+#      - sh
+#      - -euc
+#      - |
+#        mkdir -p /etc/grafana/provisioning/datasources
+#        cat <<EOF > /etc/grafana/provisioning/datasources/ds.yaml
+#        apiVersion: 1
+#        datasources:
+#        - name: Loki
+#          type: loki
+#          access: proxy
+#          orgId: 1
+#          url: http://loki:3100
+#          basicAuth: false
+#          isDefault: true
+#          version: 1
+#          editable: false
+#        EOF
+#        /run.sh
+#    image: grafana/grafana:12.1.1 # keep this fix version of Grafana
+#    restart: unless-stopped
+#    ports:
+#      - "3001:3000"
+#    volumes:
+#      - ./grafana-data:/var/lib/grafana
